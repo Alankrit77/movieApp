@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Movie Listing</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Movie Listings</h1>
+      <input type="text" id="searchBar" placeholder="Search movies..." />
+    </header>
+    <main>
+      <div id="movieList" class="movie-list"></div>
+    </main>
+
+    <!-- Modal for movie details -->
+    <div id="movieModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <img id="modalPoster" src="" alt="Movie Poster" />
+        <p id="modalDescription"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
